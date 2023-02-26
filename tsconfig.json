@@ -1,0 +1,21 @@
+{
+	"compilerOptions": {
+		"module": "CommonJS", // required
+		"target": "ES2022", // required
+		"noImplicitAny": true,
+		"sourceMap": true,
+		"strict": true,
+		"outDir": "./build",
+		"rootDir": "./src",
+		"emitDecoratorMetadata": true, // required
+		"experimentalDecorators": true, // required
+		"declaration": false,
+		"importHelpers": true, // required
+		"forceConsistentCasingInFileNames": true,
+		"moduleResolution": "Node", // required
+		"esModuleInterop": true, // required,
+		"skipLibCheck": true,
+		"resolveJsonModule": true
+	},
+	"exclude": ["node_modules"]
+}

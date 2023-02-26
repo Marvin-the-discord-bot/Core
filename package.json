@@ -1,0 +1,33 @@
+{
+	"name": "core",
+	"version": "0.0.0",
+	"description": "Core api of Marvin the Discord bot",
+	"main": "build/shardManager.js",
+	"type": "commonjs",
+	"repository": "git@github.com:Marvin-the-discord-bot/Core.git",
+	"author": "Etienne Quantin <etienne.quantin@danaen.fr>",
+	"license": "MIT",
+	"private": true,
+	"dependencies": {
+		"@discordx/importer": "^1.1.10",
+		"discord.js": "^14.7.1",
+		"discordx": "^11.7.0",
+		"i18n": "^0.15.1",
+		"lodash": "^4.17.21"
+	},
+	"devDependencies": {
+		"@types/i18n": "^0.13.6",
+		"@types/lodash": "^4.14.191",
+		"@types/node": "^18.14.1",
+		"@typescript-eslint/eslint-plugin": "^5.53.0",
+		"@typescript-eslint/parser": "^5.53.0",
+		"eslint": "^8.34.0",
+		"prettier": "^2.8.4",
+		"typescript": "^4.9.5"
+	},
+	"scripts": {
+		"build": "tsc",
+		"dev": "npx ts-node-dev ./src/app.ts",
+		"start": "node ./build/shardManager.js"
+	}
+}
